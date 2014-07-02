@@ -1,5 +1,4 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<h1>Users</h1>
 
 <%= form_for @user do |f| %>
   <% if @user.errors.any? %>
@@ -15,6 +14,10 @@
   <div class="field">
     <%= f.label :email %><br/>
     <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br/>
+    <%= f.text_field :name %>
   </div>
   <div class="field">
     <%= f.label :password %><br/>
